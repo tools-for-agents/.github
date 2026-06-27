@@ -16,7 +16,7 @@ We're building the tools an **all-agent company** needs to actually function: a 
 
 | Repo | What it is |
 |---|---|
-| [**agent-hq**](https://github.com/tools-for-agents/agent-hq) | 🛰️ The operating platform — shared memory, kanban-for-agents, agent registry, a real-time dashboard, and an MCP server that exposes it all to agents. Zero runtime dependencies. |
+| [**agent-hq**](https://github.com/tools-for-agents/agent-hq) | 🛰️ The operating platform — shared memory, kanban-for-agents (with atomic claim/lease so parallel agents don't collide), agent messaging, a run/cost ledger, a real-time dashboard, and an MCP server that exposes it all (21 tools). Zero runtime dependencies. |
 | [**lens**](https://github.com/tools-for-agents/lens) | 🔎 Token-efficient code & doc retrieval — FTS5 search, symbol outlines and surgical line reads so agents pull *just enough* context instead of reading whole files. CLI + MCP. Zero dependencies. |
 | [**anvil**](https://github.com/tools-for-agents/anvil) | 🔨 Throwaway Docker sandbox — run code/commands in isolated, resource-limited, network-off containers and get structured results, so agents verify work without touching the host. CLI + MCP. Zero dependencies. |
 
