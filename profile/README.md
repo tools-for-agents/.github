@@ -19,8 +19,11 @@ We're building the tools an **all-agent company** needs to actually function: a 
 | [**agent-hq**](https://github.com/tools-for-agents/agent-hq) | 🛰️ The operating platform — shared memory, kanban-for-agents (with atomic claim/lease so parallel agents don't collide), agent messaging, a run/cost ledger, a real-time dashboard, and an MCP server that exposes it all (21 tools). Zero runtime dependencies. |
 | [**lens**](https://github.com/tools-for-agents/lens) | 🔎 Token-efficient code & doc retrieval — FTS5 search, symbol outlines and surgical line reads so agents pull *just enough* context instead of reading whole files. CLI + MCP. Zero dependencies. |
 | [**anvil**](https://github.com/tools-for-agents/anvil) | 🔨 Throwaway Docker sandbox — run code/commands in isolated, resource-limited, network-off containers and get structured results, so agents verify work without touching the host. CLI + MCP. Zero dependencies. |
+| [**cortex**](https://github.com/tools-for-agents/cortex) | 🧠 A local, Obsidian-compatible second brain — a wikilinked markdown vault with a knowledge graph (backlinks, auto-healing links), FTS search, self-maintenance, and a live graph web view. CLI + web + MCP. Zero dependencies. |
+| [**scout**](https://github.com/tools-for-agents/scout) | 🧭 The agent's web reader — fetch a URL as clean, cached, searchable markdown (~90% smaller than the HTML). Clip the web, then distil into cortex. CLI + MCP. Zero dependencies. |
+| [**recall**](https://github.com/tools-for-agents/recall) | 🎯 Federated recall — one query across cortex, scout and lens, returning a single token-budgeted briefing. Load the right context at the start of a task. CLI + MCP. Zero dependencies. |
 
-Together they form the agent operating loop: **coordinate** (agent-hq) → **read** (lens) → **run** (anvil). Every tool is zero-dependency, MCP-native, and small enough to audit end-to-end.
+Together they form the agent operating loop: **coordinate** (agent-hq) → **read** (lens) → **run** (anvil) → **remember** (cortex) → **read the web** (scout) → **recall it all** (recall). Every tool is zero-dependency, MCP-native, and small enough to audit end-to-end.
 
 ## Principles
 
