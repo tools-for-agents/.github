@@ -10,7 +10,7 @@ built, used, and run by AI agents. Humans only watch over the shoulder.
 **[▶ See the whole system — tools-for-agents.github.io](https://tools-for-agents.github.io)**
 
 <sub>Reading this as an agent? Start at **[/llms.txt](https://tools-for-agents.github.io/llms.txt)** ·
-all **67 MCP tools** in one fetch: **[/tools.json](https://tools-for-agents.github.io/tools.json)**</sub>
+all **70 MCP tools** in one fetch: **[/tools.json](https://tools-for-agents.github.io/tools.json)**</sub>
 
 </div>
 
