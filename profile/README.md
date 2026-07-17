@@ -28,7 +28,7 @@ We're building the tools an **all-agent company** needs to actually function: a 
 | [**anvil**](https://github.com/tools-for-agents/anvil) | ⚒ Throwaway Docker sandbox — run code/commands in isolated, resource-limited, network-off containers and get structured results, so agents verify work without touching the host. Opt-in run log + dashboard. CLI + web + MCP. Zero dependencies. |
 | [**cortex**](https://github.com/tools-for-agents/cortex) | 🧠 A local, Obsidian-compatible second brain — a wikilinked markdown vault with a knowledge graph (backlinks, auto-healing links), FTS search, self-maintenance, and a live graph web view. CLI + web + MCP. Zero dependencies. |
 | [**scout**](https://github.com/tools-for-agents/scout) | 🧭 The agent's web reader — fetch a URL as clean, cached, searchable markdown (~90% smaller than the HTML). Clip the web, then distil into cortex. CLI + reading-room web view + MCP. Zero dependencies. |
-| [**prism**](https://github.com/tools-for-agents/prism) | 🔻 The agent's data reader — any JSON/JSONL blob becomes its *shape* and the *slice* you asked for, never the whole thing. Byte-, depth-, token- and node-bounded, because it reads untrusted data. CLI + MCP. Zero dependencies. |
+| [**prism**](https://github.com/tools-for-agents/prism) | 🔻 The agent's data reader — any JSON/JSONL blob becomes its *shape* and the *slice* you asked for, never the whole thing. Byte-, depth-, token- and node-bounded, because it reads untrusted data. CLI + web + MCP. Zero dependencies. |
 | [**recall**](https://github.com/tools-for-agents/recall) | 🎯 Federated recall — one query across cortex, agent-hq, scout and lens, returning a single token-budgeted briefing. Load the right context at the start of a task. CLI + console + MCP. Zero dependencies. |
 | [**iris**](https://github.com/tools-for-agents/iris) | 👁 **The agent's eye** — renders what you built at real viewports and themes and hands the **pixels** back to the model: overflow, clipping, contrast, unreadable type, collisions, dead game loops, design drift. Ships as a **CI gate**. CLI + MCP. Zero dependencies. |
 
@@ -52,15 +52,16 @@ An agent writing CSS or a game loop emits code and never sees the result — it 
 
 So `iris` renders your work and gives the model back the **pixels**, and it is a **CI gate** in every repo that ships a UI. Proven, not assumed: a branch carrying one plausible CSS line (`margin-left:640px`) produced **`test: success` · `look: failure`**, with the screenshots attached. The unit tests were blind. The eye stopped it.
 
-## Almost every tool has a web view
+## Every tool has a web view
 
-Beyond the CLI and MCP surfaces, each tool but one ships a **`serve`** command — a live, self-contained dashboard for a human overseer, no build step and no dependencies (prism is the exception: a data reader is a pipe, not a page, so it stays CLI + MCP):
+Beyond the CLI and MCP surfaces, each tool ships a **`serve`** command — a live, self-contained dashboard for a human overseer, no build step and no dependencies:
 
 - 🛰️ **agent-hq** — the company dashboard: kanban, agents, memory, a knowledge-graph tab, ledger, activity
 - 🔎 **lens** — a code explorer: file tree, ranked FTS search, syntax-highlighted reader, symbol outline
 - ⚒ **anvil** — a forge log of every sandbox run: code, stdout/stderr, exit status, resource limits
 - 🧠 **cortex** — a force-directed knowledge-graph explorer, click to read
 - 🧭 **scout** — a reading room over everything you've read, full-text searchable
+- 🔻 **prism** — a data explorer: paste a JSON/JSONL blob, walk its shape tree, read any path, find a key
 - 🎯 **recall** — a unified-briefing console that interleaves all four stores into one view
 - 👁 **iris** — the eye: what your page looks like at every viewport, and every defect a glance would catch
 
