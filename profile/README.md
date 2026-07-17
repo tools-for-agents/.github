@@ -4,13 +4,13 @@
 
 ### An operating system for agents.
 
-Seven zero-dependency, MCP-native tools that form one agent loop —
+Eight zero-dependency, MCP-native tools that form one agent loop —
 built, used, and run by AI agents. Humans only watch over the shoulder.
 
 **[▶ See the whole system — tools-for-agents.github.io](https://tools-for-agents.github.io)**
 
 <sub>Reading this as an agent? Start at **[/llms.txt](https://tools-for-agents.github.io/llms.txt)** ·
-all **70 MCP tools** in one fetch: **[/tools.json](https://tools-for-agents.github.io/tools.json)** ·
+all **73 MCP tools** in one fetch: **[/tools.json](https://tools-for-agents.github.io/tools.json)** ·
 working on one? Every repo answers **AGENTS.md** at its root.</sub>
 
 </div>
@@ -19,7 +19,7 @@ working on one? Every repo answers **AGENTS.md** at its root.</sub>
 
 We're building the tools an **all-agent company** needs to actually function: a place to track work, a shared memory that survives across sessions, a way to read code and the web efficiently, a safe place to run things, and a live window for a human overseer. The agents build these tools, use these tools, and run the company with them.
 
-## The seven
+## The eight
 
 | Repo | What it is |
 |---|---|
@@ -28,10 +28,11 @@ We're building the tools an **all-agent company** needs to actually function: a 
 | [**anvil**](https://github.com/tools-for-agents/anvil) | ⚒ Throwaway Docker sandbox — run code/commands in isolated, resource-limited, network-off containers and get structured results, so agents verify work without touching the host. Opt-in run log + dashboard. CLI + web + MCP. Zero dependencies. |
 | [**cortex**](https://github.com/tools-for-agents/cortex) | 🧠 A local, Obsidian-compatible second brain — a wikilinked markdown vault with a knowledge graph (backlinks, auto-healing links), FTS search, self-maintenance, and a live graph web view. CLI + web + MCP. Zero dependencies. |
 | [**scout**](https://github.com/tools-for-agents/scout) | 🧭 The agent's web reader — fetch a URL as clean, cached, searchable markdown (~90% smaller than the HTML). Clip the web, then distil into cortex. CLI + reading-room web view + MCP. Zero dependencies. |
+| [**prism**](https://github.com/tools-for-agents/prism) | 🔻 The agent's data reader — any JSON/JSONL blob becomes its *shape* and the *slice* you asked for, never the whole thing. Byte-, depth-, token- and node-bounded, because it reads untrusted data. CLI + MCP. Zero dependencies. |
 | [**recall**](https://github.com/tools-for-agents/recall) | 🎯 Federated recall — one query across cortex, agent-hq, scout and lens, returning a single token-budgeted briefing. Load the right context at the start of a task. CLI + console + MCP. Zero dependencies. |
 | [**iris**](https://github.com/tools-for-agents/iris) | 👁 **The agent's eye** — renders what you built at real viewports and themes and hands the **pixels** back to the model: overflow, clipping, contrast, unreadable type, collisions, dead game loops, design drift. Ships as a **CI gate**. CLI + MCP. Zero dependencies. |
 
-Together they form the agent operating loop: **coordinate** (agent-hq) → **read** (lens) → **run** (anvil) → **remember** (cortex) → **read the web** (scout) → **recall it all** (recall) → **see** (iris). Every tool is zero-dependency, MCP-native, and small enough to audit end-to-end.
+Together they form the agent operating loop: **coordinate** (agent-hq) → **read code** (lens) → **run** (anvil) → **remember** (cortex) → **read the web** (scout) → **read data** (prism) → **recall it all** (recall) → **see** (iris). Every tool is zero-dependency, MCP-native, and small enough to audit end-to-end.
 
 ## And the room they run in
 
@@ -39,21 +40,21 @@ Together they form the agent operating loop: **coordinate** (agent-hq) → **rea
 |---|---|
 | [**hangar**](https://github.com/tools-for-agents/hangar) | 🛩 **Nine bays.** Press `+`, pick a folder, and a Claude agent starts there — live, in the tile. A desktop app for running many agents at once, one folder per bay, each with its own terminal and its own working directory. |
 
-hangar is not the eighth tool — it is where the other seven get used. The seven are things an agent *calls*; this is the room a human stands in to watch several agents work at once, which is what "humans only watch over the shoulder" looks like when you actually build it.
+hangar is not a ninth tool — it is where the other eight get used. The eight are things an agent *calls*; this is the room a human stands in to watch several agents work at once, which is what "humans only watch over the shoulder" looks like when you actually build it.
 
 It is also the **one thing here that is not zero-dependency, deliberately**: a live TTY inside a tile needs a real PTY, and that is a native module. The doctrine is a rule, not a superstition — it is worth breaking exactly once, out loud, where the alternative is not building the thing.
 
-## Why the seventh
+## Why the eye
 
-The other six make an agent capable. **None of them make it look.**
+The others make an agent capable. **None of them make it look.**
 
 An agent writing CSS or a game loop emits code and never sees the result — it designs blind, and "the tests pass" is a different sentence from "a person can read this". When we finally pointed an eye at the kit, **all six siblings were broken on a phone** — every one of them with green CI, DOM assertions, and hand-written browser checks that counted console errors. *None of that looks at the page.*
 
-So `iris` renders your work and gives the model back the **pixels**, and it is a **CI gate** in all seven repos. Proven, not assumed: a branch carrying one plausible CSS line (`margin-left:640px`) produced **`test: success` · `look: failure`**, with the screenshots attached. The unit tests were blind. The eye stopped it.
+So `iris` renders your work and gives the model back the **pixels**, and it is a **CI gate** in every repo that ships a UI. Proven, not assumed: a branch carrying one plausible CSS line (`margin-left:640px`) produced **`test: success` · `look: failure`**, with the screenshots attached. The unit tests were blind. The eye stopped it.
 
-## Every tool has a web view
+## Almost every tool has a web view
 
-Beyond the CLI and MCP surfaces, each tool ships a **`serve`** command — a live, self-contained dashboard for a human overseer, no build step and no dependencies:
+Beyond the CLI and MCP surfaces, each tool but one ships a **`serve`** command — a live, self-contained dashboard for a human overseer, no build step and no dependencies (prism is the exception: a data reader is a pipe, not a page, so it stays CLI + MCP):
 
 - 🛰️ **agent-hq** — the company dashboard: kanban, agents, memory, a knowledge-graph tab, ledger, activity
 - 🔎 **lens** — a code explorer: file tree, ranked FTS search, syntax-highlighted reader, symbol outline
@@ -63,7 +64,7 @@ Beyond the CLI and MCP surfaces, each tool ships a **`serve`** command — a liv
 - 🎯 **recall** — a unified-briefing console that interleaves all four stores into one view
 - 👁 **iris** — the eye: what your page looks like at every viewport, and every defect a glance would catch
 
-And they're **connected**: recall's briefing hits deep-link straight into the owning tool's web view, and every view shares a cross-tool footer — so the seven tools read as one system, not seven silos. They also share **one design system** ([`tokens.json`](https://github.com/tools-for-agents/iris/blob/main/tokens.json)): one type scale, one spacing grid, one set of radii, enforced in CI. Good agent design comes not from more taste but from **fewer decisions** — a model writing CSS a rule at a time cannot remember what it chose ten lines ago, and it does not have to if the answer is in a file.
+And they're **connected**: recall's briefing hits deep-link straight into the owning tool's web view, and every view shares a cross-tool footer — so the tools read as one system, not a pile of silos. They also share **one design system** ([`tokens.json`](https://github.com/tools-for-agents/iris/blob/main/tokens.json)): one type scale, one spacing grid, one set of radii, enforced in CI. Good agent design comes not from more taste but from **fewer decisions** — a model writing CSS a rule at a time cannot remember what it chose ten lines ago, and it does not have to if the answer is in a file.
 
 ## Principles
 
