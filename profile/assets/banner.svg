@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="tools-for-agents — an operating system for agents">
+  <defs>
+    <linearGradient id="wm" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0" stop-color="#6ea8fe"/><stop offset="0.22" stop-color="#4fd6be"/>
+      <stop offset="0.44" stop-color="#a78bfa"/><stop offset="0.62" stop-color="#c792ea"/>
+      <stop offset="0.8" stop-color="#ec4899"/><stop offset="1" stop-color="#e0a24e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="82%" cy="-10%" r="75%">
+      <stop offset="0" stop-color="#16213a"/><stop offset="55%" stop-color="#0a0b0e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#1b1f29"/><stop offset="100%" stop-color="#0a0b0e"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="340" rx="26" fill="#0a0b0e"/>
+  <rect width="1200" height="340" rx="26" fill="url(#glow)"/>
+  <rect x="1" y="1" width="1198" height="338" rx="25" fill="none" stroke="#20242e" stroke-width="1.5"/>
+
+  <!-- the loop -->
+  <g transform="translate(190,170)">
+    <g fill="none" stroke-width="4" stroke-linecap="round" opacity="0.55">
+      <path d="M0 -92 A92 92 0 0 1 65 -65" stroke="#4fd6be"/>
+      <path d="M65 -65 A92 92 0 0 1 92 0" stroke="#ff6a1a"/>
+      <path d="M92 0 A92 92 0 0 1 65 65" stroke="#a78bfa"/>
+      <path d="M65 65 A92 92 0 0 1 0 92" stroke="#e0a24e"/>
+      <path d="M0 92 A92 92 0 0 1 -65 65" stroke="#38bdf8"/>
+      <path d="M-65 65 A92 92 0 0 1 -92 0" stroke="#ec4899"/>
+      <path d="M-92 0 A92 92 0 0 1 -65 -65" stroke="#c792ea"/>
+      <path d="M-65 -65 A92 92 0 0 1 0 -92" stroke="#6ea8fe"/>
+    </g>
+    <g>
+      <circle cx="0" cy="-92" r="22" fill="#6ea8fe" opacity="0.16"/><circle cx="0" cy="-92" r="12" fill="#6ea8fe"/>
+      <circle cx="65" cy="-65" r="22" fill="#4fd6be" opacity="0.16"/><circle cx="65" cy="-65" r="12" fill="#4fd6be"/>
+      <circle cx="92" cy="0" r="22" fill="#ff6a1a" opacity="0.16"/><circle cx="92" cy="0" r="12" fill="#ff6a1a"/>
+      <circle cx="65" cy="65" r="22" fill="#a78bfa" opacity="0.16"/><circle cx="65" cy="65" r="12" fill="#a78bfa"/>
+      <circle cx="0" cy="92" r="22" fill="#e0a24e" opacity="0.16"/><circle cx="0" cy="92" r="12" fill="#e0a24e"/>
+      <circle cx="-65" cy="65" r="22" fill="#38bdf8" opacity="0.16"/><circle cx="-65" cy="65" r="12" fill="#38bdf8"/>
+      <circle cx="-92" cy="0" r="22" fill="#ec4899" opacity="0.16"/><circle cx="-92" cy="0" r="12" fill="#ec4899"/>
+      <circle cx="-65" cy="-65" r="22" fill="#c792ea" opacity="0.16"/><circle cx="-65" cy="-65" r="12" fill="#c792ea"/>
+    </g>
+    <circle cx="0" cy="0" r="24" fill="url(#core)" stroke="#333947" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="6" fill="#e8ebf2"/>
+  </g>
+
+  <!-- wordmark block -->
+  <text x="356" y="108" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="15" letter-spacing="3.5" fill="#9aa3b5">AN OPERATING SYSTEM FOR AGENTS</text>
+  <text x="352" y="184" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="70" font-weight="800" letter-spacing="-1.5" fill="url(#wm)">tools-for-agents</text>
+  <text x="356" y="230" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="21" fill="#c2c9d6">Eight primitives. One agent loop.</text>
+  <text x="356" y="276" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="15.5" fill="#7b8391">8 tools · 74 MCP tools · zero-dependency · built &amp; run by agents</text>
+</svg>

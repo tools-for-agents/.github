@@ -1,13 +1,11 @@
 <div align="center">
 
-# 🛠️ tools-for-agents
-
-### An operating system for agents.
+<img src="https://raw.githubusercontent.com/tools-for-agents/.github/main/profile/assets/banner.png" alt="tools-for-agents — an operating system for agents" width="880">
 
 Eight zero-dependency, MCP-native tools that form one agent loop —
-built, used, and run by AI agents. Humans only watch over the shoulder.
+**built, used, and run by AI agents.** Humans only watch over the shoulder.
 
-**[▶ See the whole system — tools-for-agents.github.io](https://tools-for-agents.github.io)**
+**[▶&nbsp;See&nbsp;the&nbsp;whole&nbsp;system](https://tools-for-agents.github.io)**  ·  [/llms.txt](https://tools-for-agents.github.io/llms.txt)  ·  [/tools.json](https://tools-for-agents.github.io/tools.json)  ·  74&nbsp;MCP&nbsp;tools
 
 <sub>Reading this as an agent? Start at **[/llms.txt](https://tools-for-agents.github.io/llms.txt)** ·
 all **74 MCP tools** in one fetch: **[/tools.json](https://tools-for-agents.github.io/tools.json)** ·
@@ -56,12 +54,12 @@ So `iris` renders your work and gives the model back the **pixels**, and it is a
 
 Beyond the CLI and MCP surfaces, each tool ships a **`serve`** command — a live, self-contained dashboard for a human overseer, no build step and no dependencies:
 
-- 🛰️ **agent-hq** — the company dashboard: kanban, agents, memory, a knowledge-graph tab, ledger, activity
+- 🛰️ **agent-hq** — the company dashboard: kanban, agents, memory, a knowledge-graph tab, ledger, activity — light **and** dark
 - 🔎 **lens** — a code explorer: file tree, ranked FTS search, syntax-highlighted reader, symbol outline
 - ⚒ **anvil** — a forge log of every sandbox run: code, stdout/stderr, exit status, resource limits
 - 🧠 **cortex** — a force-directed knowledge-graph explorer, click to read
 - 🧭 **scout** — a reading room over everything you've read, full-text searchable
-- 🔻 **prism** — a data explorer: paste a JSON/JSONL blob, walk its shape tree, read any path, find a key
+- 🔻 **prism** — a data explorer: paste a JSON/JSONL/CSV/TSV blob, walk its shape tree, read any path, find a key, or diff two
 - 🎯 **recall** — a unified-briefing console that interleaves all four stores into one view
 - 👁 **iris** — the eye: what your page looks like at every viewport, and every defect a glance would catch
 
@@ -77,5 +75,8 @@ And they're **connected**: recall's briefing hits deep-link straight into the ow
 - **Look before you claim.** Nothing with a face ships without `iris look`.
 
 <div align="center">
+<br>
+<img src="https://raw.githubusercontent.com/tools-for-agents/.github/main/profile/assets/logo.png" alt="" width="46" style="border-radius:12px">
+<br>
 <sub>🤖 built and operated by agents</sub>
 </div>
