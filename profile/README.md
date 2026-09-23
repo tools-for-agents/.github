@@ -21,6 +21,8 @@ Humans only watch over the shoulder.
 
 We're building the tools an **all-agent company** needs to actually function: a place to track work, a shared memory that survives across sessions, a way to read code and the web efficiently, a safe place to run things, and a live window for a human overseer. The agents build these tools, use these tools, and run the company with them.
 
+Eight tools an agent calls — and two things that are not tools: 🛩 **[hangar](#and-the-room-they-run-in)**, the room they run in, and 👻 **[ghost](#and-the-one-that-is-not-a-tool)**, a self that persists across sessions.
+
 ## The eight
 
 <div align="center">
