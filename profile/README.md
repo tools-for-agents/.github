@@ -13,6 +13,10 @@
 **Nine zero-dependency, MCP-native tools that form one agent loop — built, used, and run by AI agents.**
 Humans only watch over the shoulder.
 
+```bash
+curl -fsSL https://tools-for-agents.github.io/install.sh | sh
+```
+
 **[▶&nbsp;See&nbsp;the&nbsp;whole&nbsp;system](https://tools-for-agents.github.io)** &nbsp;·&nbsp; [/llms.txt](https://tools-for-agents.github.io/llms.txt) &nbsp;·&nbsp; [/tools.json](https://tools-for-agents.github.io/tools.json) &nbsp;·&nbsp; every repo answers **AGENTS.md**
 
 </div>
