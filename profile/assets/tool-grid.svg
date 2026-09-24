@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 624" width="1200" height="624" role="img"><defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 772" width="1200" height="772" role="img"><defs>
   <linearGradient id="wm" x1="0" y1="0" x2="1" y2="0.3"><stop offset="0" stop-color="#6ea8fe"/><stop offset="0.22" stop-color="#4fd6be"/><stop offset="0.44" stop-color="#a78bfa"/><stop offset="0.62" stop-color="#c792ea"/><stop offset="0.8" stop-color="#ec4899"/><stop offset="1" stop-color="#e0a24e"/></linearGradient>
   <radialGradient id="glow" cx="80%" cy="-8%" r="80%"><stop offset="0" stop-color="#16213a"/><stop offset="55%" stop-color="#0a0b0e" stop-opacity="0"/></radialGradient>
   <radialGradient id="core" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#1b1f29"/><stop offset="100%" stop-color="#0a0b0e"/></radialGradient>
-</defs><rect width="1200" height="624" fill="#0a0b0e"/><g transform="translate(24,24)">
+</defs><rect width="1200" height="772" fill="#0a0b0e"/><g transform="translate(24,24)">
       <rect width="568" height="132" rx="14" fill="#12141a" stroke="#242832"/>
       <rect width="4" height="132" rx="2" fill="#6ea8fe"/>
       <circle cx="34" cy="40" r="9" fill="#6ea8fe"/>
@@ -28,13 +28,21 @@
       <text x="24" y="112" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#9aa3b5">3 MCP tools · zero-dep · serve</text>
     </g><g transform="translate(608,172)">
       <rect width="568" height="132" rx="14" fill="#12141a" stroke="#242832"/>
+      <rect width="4" height="132" rx="2" fill="#f5d547"/>
+      <circle cx="34" cy="40" r="9" fill="#f5d547"/>
+      <text x="54" y="47" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="21" font-weight="700" fill="#f5d547">keep</text>
+      <text x="548" y="45" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12.5" letter-spacing="1" fill="#7b8391">HOLD SECRETS</text>
+      <text x="24" y="86" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="18" font-weight="600" fill="#e8ebf2">Use a secret without holding it.</text>
+      <text x="24" y="112" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#9aa3b5">5 MCP tools · zero-dep · CLI</text>
+    </g><g transform="translate(24,320)">
+      <rect width="568" height="132" rx="14" fill="#12141a" stroke="#242832"/>
       <rect width="4" height="132" rx="2" fill="#a78bfa"/>
       <circle cx="34" cy="40" r="9" fill="#a78bfa"/>
       <text x="54" y="47" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="21" font-weight="700" fill="#a78bfa">cortex</text>
       <text x="548" y="45" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12.5" letter-spacing="1" fill="#7b8391">REMEMBER</text>
       <text x="24" y="86" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="18" font-weight="600" fill="#e8ebf2">A second brain that outlives the context window.</text>
       <text x="24" y="112" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#9aa3b5">16 MCP tools · zero-dep · serve</text>
-    </g><g transform="translate(24,320)">
+    </g><g transform="translate(608,320)">
       <rect width="568" height="132" rx="14" fill="#12141a" stroke="#242832"/>
       <rect width="4" height="132" rx="2" fill="#e0a24e"/>
       <circle cx="34" cy="40" r="9" fill="#e0a24e"/>
@@ -42,7 +50,7 @@
       <text x="548" y="45" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12.5" letter-spacing="1" fill="#7b8391">READ THE WEB</text>
       <text x="24" y="86" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="18" font-weight="600" fill="#e8ebf2">The web, ~90% lighter.</text>
       <text x="24" y="112" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#9aa3b5">8 MCP tools · zero-dep · serve</text>
-    </g><g transform="translate(608,320)">
+    </g><g transform="translate(24,468)">
       <rect width="568" height="132" rx="14" fill="#12141a" stroke="#242832"/>
       <rect width="4" height="132" rx="2" fill="#38bdf8"/>
       <circle cx="34" cy="40" r="9" fill="#38bdf8"/>
@@ -50,7 +58,7 @@
       <text x="548" y="45" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12.5" letter-spacing="1" fill="#7b8391">READ DATA</text>
       <text x="24" y="86" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="18" font-weight="600" fill="#e8ebf2">Read data without reading the blob.</text>
       <text x="24" y="112" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#9aa3b5">4 MCP tools · zero-dep · serve</text>
-    </g><g transform="translate(24,468)">
+    </g><g transform="translate(608,468)">
       <rect width="568" height="132" rx="14" fill="#12141a" stroke="#242832"/>
       <rect width="4" height="132" rx="2" fill="#ec4899"/>
       <circle cx="34" cy="40" r="9" fill="#ec4899"/>
@@ -58,7 +66,7 @@
       <text x="548" y="45" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12.5" letter-spacing="1" fill="#7b8391">RECALL IT ALL</text>
       <text x="24" y="86" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="18" font-weight="600" fill="#e8ebf2">One query. Every store you have.</text>
       <text x="24" y="112" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#9aa3b5">3 MCP tools · zero-dep · serve</text>
-    </g><g transform="translate(608,468)">
+    </g><g transform="translate(24,616)">
       <rect width="568" height="132" rx="14" fill="#12141a" stroke="#242832"/>
       <rect width="4" height="132" rx="2" fill="#c792ea"/>
       <circle cx="34" cy="40" r="9" fill="#c792ea"/>
@@ -66,4 +74,12 @@
       <text x="548" y="45" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12.5" letter-spacing="1" fill="#7b8391">SEE</text>
       <text x="24" y="86" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="18" font-weight="600" fill="#e8ebf2">Look at what you built.</text>
       <text x="24" y="112" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#9aa3b5">4 MCP tools · zero-dep · serve</text>
+    </g><g transform="translate(608,616)">
+      <rect width="568" height="132" rx="14" fill="#12141a" stroke="#242832"/>
+      <rect width="4" height="132" rx="2" fill="#9aa4b2"/>
+      <path d="M25.75 50.45 V37.8 A8.25 8.25 0 0 1 42.25 37.8 V50.45 q-1.375 -3.3 -2.75 0 q-1.375 -3.3 -2.75 0 q-1.375 -3.3 -2.75 0 q-1.375 -3.3 -2.75 0 q-1.375 -3.3 -2.75 0 q-1.375 -3.3 -2.75 0 Z" fill="#9aa4b2"/><circle cx="31.03" cy="38.9" r="1.54" fill="#0a0b0e"/><circle cx="36.97" cy="38.9" r="1.54" fill="#0a0b0e"/>
+      <text x="54" y="47" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="21" font-weight="700" fill="#9aa4b2">ghost</text>
+      <text x="548" y="45" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12.5" letter-spacing="1" fill="#7b8391">THE SELF</text>
+      <text x="24" y="86" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="18" font-weight="600" fill="#e8ebf2">A self that persists across sessions.</text>
+      <text x="24" y="112" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" fill="#9aa3b5">hooks, not MCP · memory · a subconscious · intentions</text>
     </g></svg>
